@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #grad {
+  background-image: linear-gradient(to right,blue,orange);
+}
+        #canvas{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <container>
+        <div  style="height:790px;"id="grad">
+        <div class="row mx-auto">
+                <div class=col></div>
+                <div class=col-4>
+                        <div class="mx-auto py-3" style="width: 500px;"><canvas id="canvas" height=500 width=500></canvas></div>
+                        <div class="mx-auto py-3" style="width: 200px;"><button type="button" onclick="game()" class="btn btn-success btn-lg btn-block">Start</button></div>
+                        <div class="mx-auto py-3" style="width: 200px;"><button type="button" onclick="pause1()" class="btn btn-dark btn-lg btn-block">Pause</button></div>
+                                 
+                </div>
+                <div class=col>
+                        <h2><div id=score class="py-5">Score:</div></h2>
+                </div>
+        </div>
+    </div>
+    </container>
+    <script src=index.js></script>
+</body>
+</html>
